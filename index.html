@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="code.js"></script>
+</head>
+  <body>
+    
+
+        <div class="intro">
+                <img src="Save it (1).png" class="center"> 
+                
+                <div class="center">
+                    <p> 1) Tell us what you made this month </p>
+                    <p> 2) Let us know what you want</p>
+                    <p> 3) We'll let you know what you can get yourself</p>
+                    <p> 4) Save! </p>
+                </div>  
+                </div>
+                
+
+    <div class="profile">
+      <h4>Profile</h4>
+      <p>Create user profile</p>
+
+      <label for="moninc">Monthly Income:</label><br />
+      <input type="number" id="moninc" name="moninc" /><br />
+      <label for="savings">Current Savings:</label><br />
+      <input type="number" id="savings" name="savings" /><br />
+      <label for="monthlyExpen">Monthly expenses:</label><br />
+      <input type="number" id="monthlyExpen" name="monthlyExpen" /><br />
+    </div>
+
+    <br />
+    <button onclick="generateAmount()" class="center">Generate amount left to spend</button>
+    <div id = "moneyInfo" class="center">
+      
+    </div> 
+    
+    <div class="center">
+    <h4>Make Wishlist</h4>
+    <h2>submit as many items to your wishlist as you'd like!</h2>
+
+      <label for="item">Item:</label><br />
+      <input type="text" id="item" name="item" /><br />
+      <label for="priority">Priority:</label><br />
+      <input type="number" id="priority" name="priority" /><br />
+      <label for="price">Price:</label><br />
+      <input type="number" id="price" name="price" /><br />
+
+     
+      <button onclick="addCard()">Add Item</button>
+      <div id="queueCards"></div>
+      <button onclick="allocateMoney()">Buy me stuff!</button>
+      <div id="itemsGained">
+        
+      
+      </div>
+      
+    </div> 
+
+  </body>
+</html>
